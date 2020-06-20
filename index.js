@@ -6,7 +6,7 @@ function reveal(songName) {
   }
 
   tab = document.getElementsByClassName("tab");
-  for (i = 0; i < tablinks.length; i++) {
+  for (i = 0; i < tab.length; i++) {
     tab[i].className = tab[i].className.replace("active", "");
   }
 
