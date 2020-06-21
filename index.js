@@ -5,8 +5,13 @@ function reveal(songName) {
     tabcontent[i].style.display = "none";
   }
 
+<<<<<<< HEAD
   tab = document.querySelectorAll(".tabcontent");
   for (i = 0; i < tablinks.length; i++) {
+=======
+  tab = document.getElementsByClassName("tab");
+  for (i = 0; i < tab.length; i++) {
+>>>>>>> fec5a06f1b334858fd53a646fc0e9f8f29e95e31
     tab[i].className = tab[i].className.replace("active", "");
   }
 
