@@ -1,15 +1,16 @@
-function reveal(songName) {
-  var tab, tabcontent;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
+const tabs = document.querySelectorAll("[data-target]");
+const tabContents = document.querySelectorAll("[data-content]");
 
-  tab = document.getElementsByClassName("tab");
-  for (i = 0; i < tab.length; i++) {
-    tab[i].className = tab[i].className.replace("active", "");
-  }
-
-  document.getElementById(songName).style.display = "block";
-  this.className += "active";
-}
+tabs.forEach((tab) => {
+  tab.addEventListener("click", () => {
+    const target = document.querySelector(tab.dataset.target);
+    tabContents.forEach((tabContent) => {
+      tabContent.classList.remove("active");
+    });
+    tabs.forEach((tab) => {
+      tab.classList.remove("active");
+    });
+    tab.classList.add("active");
+    target.classList.add("active");
+  });
+});
