@@ -1,6 +1,6 @@
 function reveal(songName) {
   var tab, tabcontent;
-  tabcontent = document.querySelectorAll(".tabs .tab button");
+  tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
   }
