@@ -6,48 +6,51 @@ footer {
   display: inline-block;
 }
 h1 {
-  font-size: 90px;
+  font-size: 4.5rem;
   font-weight: 900;
+  width: 80%;
+  margin: 0 auto;
 }
 h2 {
-  font-size: 56px;
+  font-size: 4rem;
   width: 80%;
   margin: 0 auto;
 }
 img {
   width: 50%;
   height: 50%;
-  margin: 0 auto;
+  margin: 0.618em auto;
   display: block;
   float: both;
 }
 audio {
-  padding: 10px;
+  margin: 0.618em;
 }
 p,
 h1,
 h2,
 footer {
   border: thick solid white;
-  border-radius: 20px;
-  padding: 10px;
+  border-radius: 0.618em;
+  padding: 0.618em;
+  margin: 0.618em auto;
+}
+footer {
+  font-size: 2rem;
+}
+article {
+  font-size: 3rem;
   width: 80%;
-  height: 80%;
-  margin: 15px auto;
+  margin: 0 auto;
 }
-p {
-  font-size: 21px;
-}
-
 li {
-  font-size: 34px;
+  font-size: 2rem;
   border: thick solid white;
-  border-radius: 20px;
+  border-radius: 0.618em;
   cursor: pointer;
-  display: flex;
-  margin: 0;
-  padding: 0;
-  justify-content: space-around;
+  display: inline-block;
+  margin: 0.618em;
+  padding: 0.618em;
   list-style-type: none;
 }
 li:hover {

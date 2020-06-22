@@ -1,6 +1,5 @@
 const tabs = document.querySelectorAll("[data-target]");
 const tabContents = document.querySelectorAll("[data-content]");
-
 tabs.forEach((tab) => {
   tab.addEventListener("click", () => {
     const target = document.querySelector(tab.dataset.target);
@@ -12,5 +11,6 @@ tabs.forEach((tab) => {
     });
     tab.classList.add("active");
     target.classList.add("active");
+    document.getElementById("sTitle").innerHTML = tab.innerHTML;
   });
 });
