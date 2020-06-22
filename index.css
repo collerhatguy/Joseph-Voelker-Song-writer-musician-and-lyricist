@@ -1,5 +1,7 @@
 body,
-footer {
+footer,
+select,
+button {
   color: white;
   background-color: black;
   text-align: center;
@@ -43,27 +45,29 @@ article {
   width: 80%;
   margin: 0 auto;
 }
-li {
+label {
   font-size: 2rem;
   border: thick solid white;
   border-radius: 0.618em;
-  cursor: pointer;
   display: inline-block;
   margin: 0.618em;
   padding: 0.618em;
-  list-style-type: none;
 }
-li:hover {
+select,
+button {
+  font-size: 1.5rem;
+  border: thick solid white;
+  border-radius: 0.618em;
+  width: 30%;
+  margin: 0 auto;
+  padding: 0.618em;
+  text-align: center;
+}
+button:hover {
   background-color: rgba(0, 100, 0, 0.9);
   transition-delay: 10ms;
   transition-duration: 0.5s;
 }
-li.active {
+button:active {
   background-color: rgba(100, 0, 0, 0.9);
-}
-[data-content] {
-  display: none;
-}
-.active[data-content] {
-  display: block;
 }
