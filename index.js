@@ -1,16 +1,17 @@
-const tabs = document.querySelectorAll("[data-target]");
 const tabContents = document.querySelectorAll("[data-content]");
-tabs.forEach((tab) => {
-  tab.addEventListener("click", () => {
-    const target = document.querySelector(tab.dataset.target);
-    tabContents.forEach((tabContent) => {
-      tabContent.classList.remove("active");
-    });
-    tabs.forEach((tab) => {
-      tab.classList.remove("active");
-    });
-    tab.classList.add("active");
-    target.classList.add("active");
-    document.getElementById("sTitle").innerHTML = tab.innerHTML;
-  });
-});
+var songNum = 0;
+function revolveR() {
+  if (songNum < tabContents.length) {
+    songNum++;
+  }
+  console.log(songNum);
+}
+function revolveL() {
+  if (songNum > 0) {
+    songNum--;
+  }
+  console.log(songNum);
+}
+function selectS() {
+  songNum = document.getElementById("#songChoice").nodeValue;
+}

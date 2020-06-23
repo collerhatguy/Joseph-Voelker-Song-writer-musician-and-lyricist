@@ -1,2 +1,3 @@
 smaller list with arrows
 background images that scroll
+buttons on the side that change the song and background

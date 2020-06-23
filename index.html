@@ -30,30 +30,38 @@
     <h2 id="sTitle">
       This is my work:
     </h2>
-    <div>
-      <form action="" method="GET">
+    <div> 
+      <button id="rButton" onclick="revolveR()">
+        >
+      </button>
+      <button id="lButton" onclick="revolveL()">
+        <
+      </button>
+    </div>
+    <div name="choicePanel">
+      <form>
         <label for="songChoice">What song would you like to listen to?</label>
         <select name="songChoice" id="songChoice" value="undecided" required>
-          <option value="#Alanwalkerish">DaVinci</option>
-          <option value="#arachniphobia">Arachnaphobia</option>
-          <option value="#battleship">Battleship</option>
-          <option value="#christina">The Sunrise</option>
-          <option value="#DespacitoChords">DespacitoChords</option>
-          <option value="#DubStepAllDay">DubStepAllDay</option>
-          <option value="#EDMRevisit">EDMREVISIT</option>
-          <option value="#Halloween">Halloween</option>
-          <option value="#ImperialMarch">ImperialMarch</option>
-          <option value="#INeedSpace">INeedSpace</option>
-          <option value="#MedievalProject">MedievalProject</option>
-          <option value="#ShirazDubstep">ShirazDubstep</option>
-          <option value="#SimpleBallad">SimpleBallad</option>
-          <option value="#Sneaky">Sneaky</option>
-          <option value="#StrangerThingsRemix">StrangerThingsRemix</option>
-          <option value="#TropicalHoyuse">TropicalHoyuse</option>
-          <option value="#uundertale">uundertale</option>
-          <option value="#ZoeLoveSong">ZoeLoveSong</option>
+          <option value="0">DaVinci</option>
+          <option value="1">Arachnaphobia</option>
+          <option value="2">Battleship</option>
+          <option value="3">The Sunrise</option>
+          <option value="4">DespacitoChords</option>
+          <option value="5">DubStepAllDay</option>
+          <option value="6">EDMREVISIT</option>
+          <option value="7">Halloween</option>
+          <option value="8">ImperialMarch</option>
+          <option value="9">INeedSpace</option>
+          <option value="10">MedievalProject</option>
+          <option value="11">ShirazDubstep</option>
+          <option value="12">SimpleBallad</option>
+          <option value="13">Sneaky</option>
+          <option value="14">StrangerThingsRemix</option>
+          <option value="15">TropicalHoyuse</option>
+          <option value="16">uundertale</option>
+          <option value="17">ZoeLoveSong</option>
         </select>
-        <button type="submit">Submit</button>
+        <button onclick="selectS()">Submit</button>
       </form>
     </div>
     <!--

@@ -1,7 +1,6 @@
 body,
 footer,
-select,
-button {
+select {
   color: white;
   background-color: black;
   text-align: center;
@@ -10,11 +9,13 @@ button {
 h1 {
   font-size: 4.5rem;
   font-weight: 900;
-  width: 80%;
-  margin: 0 auto;
 }
 h2 {
   font-size: 4rem;
+}
+h1,
+h2,
+article {
   width: 80%;
   margin: 0 auto;
 }
@@ -31,7 +32,9 @@ audio {
 p,
 h1,
 h2,
-footer {
+footer,
+label,
+button {
   border: thick solid white;
   border-radius: 0.618em;
   padding: 0.618em;
@@ -42,22 +45,17 @@ footer {
 }
 article {
   font-size: 3rem;
-  width: 80%;
-  margin: 0 auto;
 }
 label {
   font-size: 2rem;
-  border: thick solid white;
-  border-radius: 0.618em;
-  display: inline-block;
-  margin: 0.618em;
-  padding: 0.618em;
 }
 select,
 button {
   font-size: 1.5rem;
-  border: thick solid white;
-  border-radius: 0.618em;
+  background-color: black;
+  color: white;
+}
+select {
   width: 30%;
   margin: 0 auto;
   padding: 0.618em;
@@ -70,4 +68,19 @@ button:hover {
 }
 button:active {
   background-color: rgba(100, 0, 0, 0.9);
+}
+#lButton,
+#rButton {
+  position: relative;
+  width: 3rem;
+  height: 80vh;
+}
+#rButton {
+  left: 49vw;
+}
+#lButton {
+  right: 49vw;
+}
+[data-content] {
+  display: none;
 }
