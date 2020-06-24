@@ -30,119 +30,100 @@
     <h2 id="sTitle">
       This is my work:
     </h2>
-    <div> 
-      <button id="rButton" onclick="revolveR()">
-        >
-      </button>
-      <button id="lButton" onclick="revolveL()">
-        <
-      </button>
+    <div id="slide-container"> 
+      <div class="content-slider">
+        <div id="Alanwalkerish" class="song-slide">
+          <audio controls src="Alanwalkerish.mp3"></audio>
+        </div>
+        <div id="arachniphobia" class="song-slide">
+          <audio controls src="arachniphobia.mp3"></audio>
+        </div>
+        <div id="battleship" class="song-slide">
+          <audio controls src="battleship.mp3"></audio>
+        </div>
+        <div id="christina" class="song-slide">
+          <audio controls src="christina.mp3"></audio>
+        </div>
+        <div id="DespacitoChords" class="song-slide">
+          <audio controls src="despacito chords.mp3"></audio>
+        </div>
+        <div id="DubStepAllDay" class="song-slide">
+          <audio controls src="dubstepallday.mp3"></audio>
+        </div>
+        <div id="EDMRevisit" class="song-slide">
+          <audio controls src="EDMREVISIT.mp3"></audio>
+        </div>
+        <div id="Halloween" class="song-slide">
+          <audio controls src="halloween.mp3"></audio>
+        </div>
+        <div id="ImperialMarch" class="song-slide">
+          <audio controls src="imperialmarch.mp3"></audio>
+        </div>
+        <div id="INeedSpace" class="song-slide">
+          <audio controls src="ineedspace.mp3"></audio>
+        </div>
+        <div id="MedievalProject" class="song-slide">
+          <audio controls src="medievalproject.mp3"></audio>
+        </div>
+        <div id="ShirazDubstep" class="song-slide">
+          <audio controls src="shirazdubstep.mp3"></audio>
+        </div>
+        <div id="SimpleBallad" class="song-slide">
+          <audio controls src="simpleballad(trap).mp3"></audio>
+        </div>
+        <div id="Sneaky" class="song-slide">
+          <audio controls src="sneaky.mp3"></audio>
+        </div>
+        <div id="StrangerThingsRemix" class="song-slide">
+          <audio controls src="strangers things remix.mp3"></audio>
+        </div>
+        <div id="TropicalHoyuse" class="song-slide">
+          <audio controls src="TROPICALHOYUSE (edited).mp3"></audio>
+        </div>
+        <div id="uundertale" class="song-slide">
+          <audio controls src="uundertale.mp3"></audio>
+        </div>
+        <div id="ZoeLoveSong" class="song-slide">
+          <audio controls src="zoelovesong.mp3"></audio>
+        </div>
+      </div>
+      <div id="button-container">
+        <button id="lButton" onclick="revolveL()">
+          <
+        </button>
+        <button id="rButton" onclick="revolveR()">
+          >
+        </button>
+      </div>
     </div>
+    
     <div name="choicePanel">
       <form>
         <label for="songChoice">What song would you like to listen to?</label>
         <select name="songChoice" id="songChoice" value="undecided" required>
-          <option value="0">DaVinci</option>
-          <option value="1">Arachnaphobia</option>
-          <option value="2">Battleship</option>
-          <option value="3">The Sunrise</option>
-          <option value="4">DespacitoChords</option>
-          <option value="5">DubStepAllDay</option>
-          <option value="6">EDMREVISIT</option>
-          <option value="7">Halloween</option>
-          <option value="8">ImperialMarch</option>
-          <option value="9">INeedSpace</option>
-          <option value="10">MedievalProject</option>
-          <option value="11">ShirazDubstep</option>
-          <option value="12">SimpleBallad</option>
-          <option value="13">Sneaky</option>
-          <option value="14">StrangerThingsRemix</option>
-          <option value="15">TropicalHoyuse</option>
-          <option value="16">uundertale</option>
-          <option value="17">ZoeLoveSong</option>
+          <div id="opptions">
+            <option value="0" selected>DaVinci</option>
+            <option value="1">Arachnaphobia</option>
+            <option value="2">Battleship</option>
+            <option value="3">The Sunrise</option>
+            <option value="4">DespacitoChords</option>
+            <option value="5">DubStepAllDay</option>
+            <option value="6">EDMREVISIT</option>
+            <option value="7">Halloween</option>
+            <option value="8">ImperialMarch</option>
+            <option value="9">INeedSpace</option>
+            <option value="10">MedievalProject</option>
+            <option value="11">ShirazDubstep</option>
+            <option value="12">SimpleBallad</option>
+            <option value="13">Sneaky</option>
+            <option value="14">StrangerThingsRemix</option>
+            <option value="15">TropicalHoyuse</option>
+            <option value="16">uundertale</option>
+            <option value="17">ZoeLoveSong</option>
+          </div>
         </select>
-        <button onclick="selectS()">Submit</button>
+        <button id="sButton" onclick="selectS(event)">Submit</button>
       </form>
-    </div>
-    <!--
-    <div class="songButtons">
-      <ul class="buttons">
-        <li data-target="#Alanwalkerish">DaVinci</li>
-        <li data-target="#arachniphobia">Arachnaphobia</li>
-        <li data-target="#battleship">Battleship</li>
-        <li data-target="#christina">The Sunrise</li>
-        <li data-target="#DespacitoChords">What Can I Do?</li>
-        <li data-target="#DubStepAllDay">DubStepAllDay</li>
-        <li data-target="#EDMRevisit">EDMRevisit</li>
-        <li data-target="#Halloween">Halloween</li>
-        <li data-target="#ImperialMarch">ImperialMarch</li>
-        <li data-target="#INeedSpace">INeedSpace</li>
-        <li data-target="#MedievalProject">MedievalProject</li>
-        <li data-target="#ShirazDubstep">ShirazDubstep</li>
-        <li data-target="#SimpleBallad">SimpleBallad</li>
-        <li data-target="#Sneaky">Sneaky</li>
-        <li data-target="#StrangerThingsRemix">StrangerThingsRemix</li>
-        <li data-target="#TropicalHoyuse">TropicalHoyuse</li>
-        <li data-target="#uundertale">uundertale</li>
-        <li data-target="#ZoeLoveSong">ZoeLoveSong</li>
-      </ul>
-    </div>
-    -->
-    <div class="content">
-      <div id="Alanwalkerish" data-content class="tabcontent">
-        <audio controls src="Alanwalkerish.mp3"></audio>
-      </div>
-      <div id="arachniphobia" data-content class="tabcontent">
-        <audio controls src="arachniphobia.mp3"></audio>
-      </div>
-      <div id="battleship" data-content class="tabcontent">
-        <audio controls src="battleship.mp3"></audio>
-      </div>
-      <div id="christina" data-content class="tabcontent">
-        <audio controls src="christina.mp3"></audio>
-      </div>
-      <div id="DespacitoChords" data-content class="tabcontent">
-        <audio controls src="despacito chords.mp3"></audio>
-      </div>
-      <div id="DubStepAllDay" data-content class="tabcontent">
-        <audio controls src="dubstepallday.mp3"></audio>
-      </div>
-      <div id="EDMRevisit" data-content class="tabcontent">
-        <audio controls src="EDMREVISIT.mp3"></audio>
-      </div>
-      <div id="Halloween" data-content class="tabcontent">
-        <audio controls src="halloween.mp3"></audio>
-      </div>
-      <div id="ImperialMarch" data-content class="tabcontent">
-        <audio controls src="imperialmarch.mp3"></audio>
-      </div>
-      <div id="INeedSpace" data-content class="tabcontent">
-        <audio controls src="ineedspace.mp3"></audio>
-      </div>
-      <div id="MedievalProject" data-content class="tabcontent">
-        <audio controls src="medievalproject.mp3"></audio>
-      </div>
-      <div id="ShirazDubstep" data-content class="tabcontent">
-        <audio controls src="shirazdubstep.mp3"></audio>
-      </div>
-      <div id="SimpleBallad" data-content class="tabcontent">
-        <audio controls src="simpleballad(trap).mp3"></audio>
-      </div>
-      <div id="Sneaky" data-content class="tabcontent">
-        <audio controls src="sneaky.mp3"></audio>
-      </div>
-      <div id="StrangerThingsRemix" data-content class="tabcontent">
-        <audio controls src="strangers things remix.mp3"></audio>
-      </div>
-      <div id="TropicalHoyuse" data-content class="tabcontent">
-        <audio controls src="TROPICALHOYUSE (edited).mp3"></audio>
-      </div>
-      <div id="uundertale" data-content class="tabcontent">
-        <audio controls src="uundertale.mp3"></audio>
-      </div>
-      <div id="ZoeLoveSong" data-content class="tabcontent">
-        <audio controls src="zoelovesong.mp3"></audio>
-      </div>
     </div>
   </body>
   <footer>

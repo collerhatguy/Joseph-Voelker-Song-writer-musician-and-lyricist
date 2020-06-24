@@ -69,18 +69,27 @@ button:hover {
 button:active {
   background-color: rgba(100, 0, 0, 0.9);
 }
-#lButton,
-#rButton {
-  position: relative;
-  width: 3rem;
-  height: 80vh;
+.content-slider {
+  width: auto;
+  height: auto;
+  transition: 2s;
 }
-#rButton {
-  left: 49vw;
+audio {
+  width: 55vw;
 }
-#lButton {
-  right: 49vw;
+.song-slide,
+.song-slide-main {
+  float: left;
+  margin: 0px;
+  padding: 0px;
 }
-[data-content] {
+.song-slide {
   display: none;
+}
+.song-slide-main {
+  left: 0;
+  position: relative;
+  display: static;
+  width: 100%;
+  margin: 0;
 }
