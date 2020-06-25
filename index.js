@@ -3,24 +3,28 @@ var songNum = 0;
 function revolveR() {
   if (songNum < songSlide.length) {
     songNum++;
+  } else {
+    songNum = songNum;
   }
-  console.log(songNum);
+  pauseAll();
   move(songNum);
 }
 function revolveL() {
   if (songNum > 0) {
     songNum--;
+  } else {
+    songNum = songNum;
   }
-  console.log(songNum);
+  pauseAll();
   move(songNum);
 }
 function selectS(e) {
-  // stopps page from reseting//
+  // stopps page from reseting
   e.preventDefault();
   // selects song choice and sets display equal to
   var f = document.getElementById("songChoice");
   songNum = f.value;
-  console.log(songNum);
+  pauseAll();
   move(songNum);
 }
 function move(num) {
@@ -41,4 +45,9 @@ function playSong() {
 function pauseSong() {
   var song = document.querySelector(".song-slide-main").children;
   song[0].pause();
+}
+function pauseAll() {
+  songSlide.forEach((element) => {
+    element.children[0].pause();
+  });
 }
