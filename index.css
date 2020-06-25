@@ -69,7 +69,9 @@ button:hover {
 button:active {
   background-color: rgba(100, 0, 0, 0.9);
 }
-.content-slider {
+.content-slider,
+#playButton,
+#pauseButton {
   width: auto;
   height: auto;
   transition: 2s;
