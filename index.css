@@ -70,8 +70,7 @@ button:active {
   background-color: rgba(100, 0, 0, 0.9);
 }
 #content-slider,
-#playButton,
-#pauseButton {
+#pauseplayConatanier {
   width: auto;
   height: auto;
   transition: 2s;

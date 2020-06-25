@@ -1,7 +1,7 @@
 const songSlide = document.querySelectorAll(".song-slide");
-var songNum = 0;
+var songNum = -1;
 function revolveR() {
-  if (songNum < songSlide.length) {
+  if (songNum < songSlide.length - 1) {
     songNum++;
   } else {
     songNum = songNum;
