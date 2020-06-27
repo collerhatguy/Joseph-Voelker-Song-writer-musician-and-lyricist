@@ -4,7 +4,7 @@ select {
   color: white;
   background-color: black;
   text-align: center;
-  display: inline-block;
+  display: block;
 }
 h1 {
   font-size: 4.5rem;
@@ -32,16 +32,17 @@ audio {
 p,
 h1,
 h2,
-footer,
 label,
 button {
   border: thick solid white;
   border-radius: 0.618em;
   padding: 0.618em;
-  margin: 0.618em auto;
+  margin: 1.618em auto;
 }
 footer {
   font-size: 2rem;
+  width: 50%;
+  margin: 0 auto;
 }
 article {
   font-size: 3rem;
@@ -57,7 +58,7 @@ button {
 }
 select {
   width: 30%;
-  margin: 0 auto;
+  margin: 1.618em auto;
   padding: 0.618em;
   text-align: center;
 }
@@ -93,4 +94,15 @@ audio {
   display: static;
   width: 100%;
   margin: 0;
+}
+#navMenu {
+  position: absolute;
+}
+ul {
+  list-style: none;
+}
+li {
+  display: inline-block;
+  width: 50%;
+  margin: 0 auto;
 }
