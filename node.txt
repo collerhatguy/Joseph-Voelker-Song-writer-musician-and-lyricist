@@ -1,0 +1,48 @@
+
+$mkdir (make directory)
+*OS
+	(operating system)
+	
+*Events
+	both must be attached to emitter
+	.emit("event") 
+		(triggers event for .on method)
+		sometimes has arguement  in form of obj
+	.on("event", function(){})
+		(is triggered by .emit)
+		can take arguements for function
+*HTTP
+	First letter uppercase (is a class)
+*path
+	must be stored  in obj with "require"
+	path.parse(__filname) gives pathway
+	
+global
+	appended to global object
+	setTimeout() {calls function after time delation}
+	clearTimeout() {
+	SetInterval() {repeateded call function}
+	clearInterval() {ends set interval}
+
+require() (module loader) 
+.exports (any function or object that will be picked up by other programs)
+.createServer(function()) creates a server
+.writeHead(status code,{object}
+req (request from user)
+	.url (everything after the domain name)
+*FS
+	sync (should never be used)
+require("fs") (file system)
+	.readFile("fileName" : "typeOfFile")
+	.appendFile("fileName", "addedConetent", function()) (can create or add file)
+	.open("fileName", "w", function()) (opens a file)
+	.writeFile("fileName", "replacerContent", function()) (overrides a file)
+	.unlink("fileName", function()) (deletes file)
+	.rename("fileName", "newName", functon())
+	.readdir("fileName") returns array of file names
+Wrapperfunction 
+	exports
+	require
+	module
+	__filename (self explanatory)
+	__dirname (pathway)
