@@ -6,12 +6,15 @@ select {
   text-align: center;
   display: block;
 }
+:root {
+  --font-max: 8rem;
+}
 h1 {
-  font-size: 4.5rem;
+  font-size: var(--font-max);
   font-weight: 900;
 }
 h2 {
-  font-size: 4rem;
+  font-size: calc(var(--font-max) / 1.618);
 }
 h1,
 h2,
@@ -37,28 +40,28 @@ button {
   border: thick solid white;
   border-radius: 0.618em;
   padding: 0.618em;
-  margin: 1.618em auto;
+  margin: 1.1em auto;
 }
 footer {
-  font-size: 2rem;
+  font-size: calc(var(--font-max) / (1.618 * 3));
   width: 50%;
   margin: 0 auto;
 }
 article {
-  font-size: 3rem;
+  font-size: calc(var(--font-max) / (1.618 * 2));
 }
 label {
-  font-size: 2rem;
+  font-size: calc(var(--font-max) / (1.618 * 3));
 }
 select,
 button {
-  font-size: 1.5rem;
+  font-size: calc(var(--font-max) / (1.618 * 4));
   background-color: black;
   color: white;
 }
 select {
   width: 30%;
-  margin: 1.618em auto;
+  margin: 1.1em auto;
   padding: 0.618em;
   text-align: center;
 }
