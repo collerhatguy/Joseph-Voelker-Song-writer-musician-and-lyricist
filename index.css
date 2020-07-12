@@ -78,6 +78,8 @@ button:active {
   width: auto;
   height: auto;
   transition: 2s;
+  display: flex;
+  justify-content: center;
 }
 audio {
   width: 55vw;
@@ -99,7 +101,8 @@ audio {
   margin: 0;
 }
 #navMenu {
-  position: absolute;
+  position: block;
+  font-size: calc(var(--font-max) / (1.618 * 2));
 }
 ul {
   list-style: none;
