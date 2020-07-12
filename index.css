@@ -1,16 +1,22 @@
-body,
-footer,
-select {
+* {
   color: white;
   background-color: black;
-  text-align: center;
-  display: block;
 }
 :root {
-  --font-max: 8rem;
+  --font-max: 9rem;
 }
 header {
   overflow-wrap: break-word;
+}
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+}
+footer {
+  display: inline-block;
 }
 h1 {
   font-size: var(--font-max);
@@ -18,12 +24,6 @@ h1 {
 }
 h2 {
   font-size: calc(var(--font-max) / 1.618);
-}
-h1,
-h2,
-article {
-  width: 80%;
-  margin: 0 auto;
 }
 img {
   width: 50%;
@@ -42,13 +42,9 @@ label,
 button {
   border: thick solid white;
   border-radius: 0.618em;
-  padding: 0.618em;
-  margin: 1.1em auto;
 }
 footer {
   font-size: calc(var(--font-max) / (1.618 * 3));
-  width: 50%;
-  margin: 0 auto;
 }
 article {
   font-size: calc(var(--font-max) / (1.618 * 2));
@@ -58,15 +54,7 @@ label {
 }
 select,
 button {
-  font-size: calc(var(--font-max) / (1.618 * 4));
-  background-color: black;
-  color: white;
-}
-select {
-  width: 30%;
-  margin: 1.1em auto;
-  padding: 0.618em;
-  text-align: center;
+  font-size: calc(var(--font-max) / (1.618 * 3));
 }
 button:hover {
   background-color: rgba(0, 100, 0, 0.9);
