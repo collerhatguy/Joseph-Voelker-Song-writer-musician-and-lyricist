@@ -9,6 +9,9 @@ select {
 :root {
   --font-max: 8rem;
 }
+header {
+  overflow-wrap: break-word;
+}
 h1 {
   font-size: var(--font-max);
   font-weight: 900;
