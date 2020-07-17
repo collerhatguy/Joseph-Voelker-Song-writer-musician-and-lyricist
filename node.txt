@@ -46,3 +46,15 @@ Wrapperfunction
 	module
 	__filename (self explanatory)
 	__dirname (pathway)
+api
+	used to get data from other sources
+	has a key
+fetch("dataPath")
+	endpoints (path for dat)
+	returns a promise (must use .then())
+	asynchronous
+	response
+		text, blob, and json (may need to be converted)
+	complete data stream
+	async can be used to simplify
+	.src = (can be used to attach data to html)

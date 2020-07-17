@@ -1,140 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>
-    Joesph Voelker: Musician and Artist
-  </title>
-  <meta name="description" content="
-  Hello, my name is Joseph Yoo. I create music, using various key
-  elements of noises and sounds to produce feelings that even words
-  cannot equate to. My main program that I work with is FL Studio to
-  help make said sounds and convert them into emotion. I hope you like
-  my works and if you made it up to this far, thank you for stopping by.
-  🙂 \ Joseph Yoo 𝒥𝓂𝓎"> 
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>josephVoelker/Bio</title>
     <link rel="stylesheet" href="index.css" />
     <script src="index.js" defer></script>
   </head>
   <body>
     <header>
-      <aside><a href="bio.html">Bio</a></aside>
-      <h2 id="sTitle">
-        This is my music:
-      </h2>
+      <h1>Joseph Yoo: <br />The Minnesotan Music Man</h1>
+      <article>
+        <p>
+          Hello, my name is Joseph Yoo. I create music, using various key
+          elements of noises and sounds to produce feelings that even words
+          cannot equate to. My main program that I work with is FL Studio to
+          help make said sounds and convert them into emotion. I hope you like
+          my works and if you made it up to this far, thank you for stopping by.
+          🙂 \ Joseph Yoo 𝒥𝓂𝓎
+        </p>
+      </article>
     </header>
-    <div id="slide-container"> 
-      <div id="content-slider">
-        <div id="Triumph" class="song-slide">
-          <audio controls src="Alanwalkerish.mp3"></audio>
-        </div>
-        <div id="Arachniphobia" class="song-slide">
-          <audio controls src="arachniphobia.mp3"></audio>
-        </div>
-        <div id="Battleship" class="song-slide">
-          <audio controls src="battleship.mp3"></audio>
-        </div>
-        <div id="The Sun Rise" class="song-slide">
-          <audio controls src="christina.mp3"></audio>
-        </div>
-        <div id="What Can I Do?" class="song-slide">
-          <audio controls src="despacito chords.mp3"></audio>
-        </div>
-        <div id="Robot Orgy" class="song-slide">
-          <audio controls src="dubstepallday.mp3"></audio>
-        </div>
-        <div id="Square Run" class="song-slide">
-          <audio controls src="EDMREVISIT.mp3"></audio>
-        </div>
-        <div id="Halloween" class="song-slide">
-          <audio controls src="halloween.mp3"></audio>
-        </div>
-        <div id="Imperial" class="song-slide">
-          <audio controls src="imperialmarch.mp3"></audio>
-        </div>
-        <div id="I Need Space" class="song-slide">
-          <audio controls src="ineedspace.mp3"></audio>
-        </div>
-        <div id="Medieval" class="song-slide">
-          <audio controls src="medievalproject.mp3"></audio>
-        </div>
-        <div id="Dubstep" class="song-slide">
-          <audio controls src="shirazdubstep.mp3"></audio>
-        </div>
-        <div id="Simple Ballad" class="song-slide">
-          <audio controls src="simpleballad(trap).mp3"></audio>
-        </div>
-        <div id="Shadow Run" class="song-slide">
-          <audio controls src="sneaky.mp3"></audio>
-        </div>
-        <div id="Stranger Things Remix" class="song-slide">
-          <audio controls src="strangers things remix.mp3"></audio>
-        </div>
-        <div id="Tropical House" class="song-slide">
-          <audio controls src="TROPICALHOYUSE (edited).mp3"></audio>
-        </div>
-        <div id="Undertale remix" class="song-slide">
-          <audio controls src="uundertale.mp3"></audio>
-        </div>
-        <div id="Zoe Love Song" class="song-slide">
-          <audio controls src="zoelovesong.mp3"></audio>
-        </div>
-        <div id="Mistakes" class="song-slide">
-          <audio controls src="Mistakes.mp3"></audio>
-        </div>
-      </div>
-      <div id="pausePlayContainer">
-        <button id="playButton" onclick="playSong()">
-          Play
-        </button>
-        <button id="pauseButton" onclick="pauseSong()">
-          Pause
-        </button>
-      </div>
-      <div id="button-container">
-        <button id="lButton" onclick="revolveL()">
-          <
-        </button>
-        <button id="rButton" onclick="revolveR()">
-          >
-        </button>
-      </div>
-    </div>
-    
-    <div name="choicePanel">
-      <form>
-        <label for="songChoice">Choose a song:</label>
-        <select name="songChoice" id="songChoice" value="undecided" required>
-          <div id="opptions">
-            <option value="0">Triumph</option>
-            <option value="1">Arachnaphobia</option>
-            <option value="2">Battleship</option>
-            <option value="3">The Sunrise</option>
-            <option value="4">What Can I Do?</option>
-            <option value="5">Robot Orgy</option>
-            <option value="6">Square Run</option>
-            <option value="7">Halloween</option>
-            <option value="8">Imperial</option>
-            <option value="9">I Need Space</option>
-            <option value="10">Medieval</option>
-            <option value="11">Dubstep</option>
-            <option value="12">SimpleBallad</option>
-            <option value="13">Shadow Run</option>
-            <option value="14">Stranger Things Remix</option>
-            <option value="15">Tropical House</option>
-            <option value="16">Undertale</option>
-            <option value="17">Zoe Love Song</option>
-            <option value="18">Mistakes</option>
-          </div>
-        </select>
-        <button id="sButton" onclick="selectS(event)">Submit</button>
-      </form>
-    </div>
+    <figure>
+      <img src="Joseph.photo.jpg" />
+      <figcaption>
+        this is me
+      </figcaption>
+    </figure>
+    <footer>
+      <p>Listen to my music here: <a href="music.html">Click me!</a></p>
+    </footer>
   </body>
-  <footer>
-    <p>Contact info:</p>
-    <p>Phone number: (612)720-4632</p>
-    <p>Email: joeyoo1998@gmail.com</p>
-  </footer>
 </html>

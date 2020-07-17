@@ -1,5 +1,6 @@
 const songSlide = document.querySelectorAll(".song-slide");
 var songNum = -1;
+const songHeader = document.getElementsByClassName("hidden")[0];
 function revolveR() {
   if (songNum < songSlide.length - 1) {
     songNum++;
@@ -36,7 +37,8 @@ function move(num) {
   songSlide[num].className = "song-slide-main";
 
   // set header equal to song name
-  document.getElementById("sTitle").innerHTML = songSlide[num].id;
+  songHeader.innerHTML = songSlide[num].id;
+  songHeader.className = "";
 }
 function playSong() {
   var song = document.querySelector(".song-slide-main").children;

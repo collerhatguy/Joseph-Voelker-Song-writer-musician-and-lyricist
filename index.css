@@ -43,18 +43,12 @@ button {
   border: thick solid white;
   border-radius: 0.618em;
 }
-footer {
-  font-size: calc(var(--font-max) / (1.618 * 3));
-}
-article {
-  font-size: calc(var(--font-max) / (1.618 * 2));
-}
-label {
-  font-size: calc(var(--font-max) / (1.618 * 3));
-}
 select,
-button {
-  font-size: calc(var(--font-max) / (1.618 * 3));
+button,
+label,
+footer,
+p {
+  font-size: calc(var(--font-max) / (1.618 * 2));
 }
 button:hover {
   background-color: rgba(0, 100, 0, 0.9);
@@ -102,4 +96,7 @@ li {
   display: inline-block;
   width: 50%;
   margin: 0 auto;
+}
+.hidden {
+  display: none;
 }
