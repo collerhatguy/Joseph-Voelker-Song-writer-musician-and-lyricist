@@ -1,24 +1,11 @@
 const songSlide = document.querySelectorAll(".song-slide");
 var songNum = -1;
 const songHeader = document.getElementsByClassName("hidden")[0];
-function revolveR() {
-  if (songNum < songSlide.length - 1) {
-    songNum++;
-  } else {
-    songNum = songNum;
-  }
-  pauseAll();
-  move(songNum);
-}
-function revolveL() {
-  if (songNum > 0) {
-    songNum--;
-  } else {
-    songNum = songNum;
-  }
-  pauseAll();
-  move(songNum);
-}
+import { revolveL, revolveR } from "./revolve.js";
+
+revolveL();
+revolveR();
+
 function selectS(e) {
   // stopps page from reseting
   e.preventDefault();
