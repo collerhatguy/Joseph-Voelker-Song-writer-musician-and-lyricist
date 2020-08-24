@@ -1,11 +1,30 @@
 const songSlide = document.querySelectorAll(".song-slide");
 var songNum = -1;
-const songHeader = document.getElementsByClassName("hidden")[0];
-import { revolveL, revolveR } from "./revolve.js";
+const songHeader = document.getElementById("songDisplay");
+const leftButton = document.getElementById("lButton");
+const rightButton = document.getElementById("rButton");
 
-revolveL();
-revolveR();
+leftButton.addEventListener("click", revolveL);
+rightButton.addEventListener("click", revolveR);
 
+function revolveR() {
+  if (songNum < songSlide.length - 1) {
+    songNum++;
+  } else {
+    songNum = songNum;
+  }
+  pauseAll();
+  move(songNum);
+}
+function revolveL() {
+  if (songNum > 0) {
+    songNum--;
+  } else {
+    songNum = songNum;
+  }
+  pauseAll();
+  move(songNum);
+}
 function selectS(e) {
   // stopps page from reseting
   e.preventDefault();

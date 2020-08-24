@@ -1,0 +1,38 @@
+* {
+  color: white;
+  background-color: black;
+  text-align: center;
+  justify-content: center;
+}
+:root {
+  --font-max: 3rem;
+}
+h2,
+footer,
+button {
+  padding: 0 1em;
+  border: 5px solid white;
+  border-radius: 2em;
+  overflow: hidden;
+}
+h2,
+button {
+  font-size: var(--font-max);
+}
+
+body {
+  height: 100vh;
+  align-content: center;
+}
+select,
+footer {
+  font-size: calc(var(--font-max) / 1.618);
+}
+.song-slide {
+  display: none;
+}
+
+#songDisplay,
+#content-slider {
+  min-height: 1em;
+}

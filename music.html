@@ -1,30 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>
-    Joesph Voelker: Musician, Artist, and Lyricist
-  </title>
-  <meta name="description" content="
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Joesph Voelker: Musician, Artist, and Lyricist
+    </title>
+    <meta
+      name="description"
+      content="
   Hello, my name is Joseph Yoo. I create music, using various key
   elements of noises and sounds to produce feelings that even words
   cannot equate to. My main program that I work with is FL Studio to
   help make said sounds and convert them into emotion. I hope you like
   my works and if you made it up to this far, thank you for stopping by.
-  🙂 \ Joseph Yoo 𝒥𝓂𝓎"> 
-  <head>
-    <link rel="stylesheet" href="index.css" />
-    <script src="index.js" defer></script>
+  🙂 \ Joseph Yoo 𝒥𝓂𝓎"
+    />
+    <link rel="stylesheet" href="music.css" />
+    <script src="code/index.js" type="module" defer></script>
   </head>
   <body>
-    <header>
-      <h2 id="sTitle">
-        This is my music:
-      </h2>
-      <h2 class="hidden"></h2>
-    </header>
-    <div id="slide-container"> 
+    <h2 id="sTitle">
+      This is my music:
+    </h2>
+    <h2 id="songDisplay"></h2>
+    <div id="slide-container">
       <div id="content-slider">
         <div id="Triumph" class="song-slide">
           <audio controls src="songs/Alanwalkerish.mp3"></audio>
@@ -93,19 +93,25 @@
         </button>
       </div>
       <div id="button-container">
-        <button id="lButton" onclick="revolveL()">
+        <button id="lButton">
           <
         </button>
-        <button id="rButton" onclick="revolveR()">
+        <button id="rButton">
           >
         </button>
       </div>
     </div>
-    
+
     <div name="choicePanel">
       <form>
         <label for="songChoice">Choose a song:</label>
-        <select name="songChoice" id="songChoice" value="undecided" required onclick="selectS(event)">
+        <select
+          name="songChoice"
+          id="songChoice"
+          value="undecided"
+          required
+          onclick="selectS(event)"
+        >
           <div id="options">
             <option value="0">Triumph</option>
             <option value="1">Arachnaphobia</option>
@@ -128,9 +134,6 @@
             <option value="18">Mistakes</option>
           </div>
         </select>
-        <!-- 
-        <button id="sButton" onclick="selectS(event)">Submit</button>
-        -->
       </form>
     </div>
   </body>
