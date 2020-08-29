@@ -3,15 +3,15 @@ var songNum = -1;
 const songHeader = document.getElementById("songDisplay");
 const leftButton = document.getElementById("lButton");
 const rightButton = document.getElementById("rButton");
+const selectButton = document.getElementById("songChoice");
 
 leftButton.addEventListener("click", revolveL);
 rightButton.addEventListener("click", revolveR);
+selectButton.addEventListener("click", selectS);
 
 function revolveR() {
   if (songNum < songSlide.length - 1) {
     songNum++;
-  } else {
-    songNum = songNum;
   }
   pauseAll();
   move(songNum);
@@ -19,18 +19,12 @@ function revolveR() {
 function revolveL() {
   if (songNum > 0) {
     songNum--;
-  } else {
-    songNum = songNum;
   }
   pauseAll();
   move(songNum);
 }
-function selectS(e) {
-  // stopps page from reseting
-  e.preventDefault();
-  // selects song choice and sets display equal to
-  var f = document.getElementById("songChoice");
-  songNum = f.value;
+function selectS() {
+  songNum = selectButton.value;
   pauseAll();
   move(songNum);
 }
@@ -40,18 +34,18 @@ function move(num) {
     element.className = "song-slide";
   });
   // set chosen song to visible
-  songSlide[num].className = "song-slide-main";
+  songSlide[num].className = "visible";
 
   // set header equal to song name
   songHeader.innerHTML = songSlide[num].id;
-  songHeader.className = "";
+  songHeader.className = "visible";
 }
 function playSong() {
-  var song = document.querySelector(".song-slide-main").children;
+  var song = document.querySelector(".visible").children;
   song[0].play();
 }
 function pauseSong() {
-  var song = document.querySelector(".song-slide-main").children;
+  var song = document.querySelector(".visible").children;
   song[0].pause();
 }
 function pauseAll() {

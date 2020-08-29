@@ -18,21 +18,40 @@ button {
 h2,
 button {
   font-size: var(--font-max);
+  margin: 0.1em;
+  justify-content: center;
 }
-
+button:hover {
+  box-shadow: 0.2em 0.2em 1 1 white;
+}
 body {
   height: 100vh;
   align-content: center;
+  margin: auto;
 }
 select,
 footer {
   font-size: calc(var(--font-max) / 1.618);
 }
+footer {
+  display: absolute;
+  bottom: 0;
+}
 .song-slide {
   display: none;
 }
 
-#songDisplay,
-#content-slider {
-  min-height: 1em;
+.visible {
+  visibility: visible;
+  /*
+  animation: mainReveal 300ms 0s 0s initial forwards;
+*/
+}
+@keyframes mainReveal {
+  from {
+    transform: rotateZ(0);
+  }
+  to {
+    transform: rotateZ(180);
+  }
 }

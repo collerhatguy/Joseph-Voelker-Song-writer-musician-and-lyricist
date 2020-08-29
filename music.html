@@ -82,8 +82,8 @@
           </div>
         </div>
         <div id="pausePlayContainer">
-          <button id="playButton" onclick="playSong()">Play</button>
-          <button id="pauseButton" onclick="pauseSong()">Pause</button>
+          <button id="pauseButton" onclick="pauseSong()">||</button>
+          <button id="playButton" onclick="playSong()">></button>
         </div>
         <div id="button-container">
           <button id="lButton"><</button>
@@ -94,13 +94,7 @@
     <div name="choicePanel">
       <form>
         <label for="songChoice">Choose a song:</label>
-        <select
-          name="songChoice"
-          id="songChoice"
-          value="undecided"
-          required
-          onclick="selectS(event)"
-        >
+        <select name="songChoice" id="songChoice" value="undecided" required>
           <div id="options">
             <option value="0">Triumph</option>
             <option value="1">Arachnaphobia</option>
