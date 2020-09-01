@@ -2,10 +2,9 @@
   color: white;
   background-color: black;
   text-align: center;
-  justify-content: center;
 }
 :root {
-  --font-max: 3rem;
+  --font-max: 4rem;
 }
 h2,
 footer,
@@ -21,13 +20,17 @@ button {
   margin: 0.1em;
   justify-content: center;
 }
+button {
+  transition-duration: 300ms;
+}
 button:hover {
-  box-shadow: 0.2em 0.2em 1 1 white;
+  box-shadow: 0.1em 0.1em 0.1em 1px white;
 }
 body {
   height: 100vh;
-  align-content: center;
-  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 select,
 footer {
@@ -40,18 +43,24 @@ footer {
 .song-slide {
   display: none;
 }
-
 .visible {
-  visibility: visible;
-  /*
-  animation: mainReveal 300ms 0s 0s initial forwards;
-*/
+  animation: songTransitionIn 1s ease-in-out forwards;
 }
-@keyframes mainReveal {
+@keyframes songTransitionIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-50vw);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes songTransitionOut {
   from {
-    transform: rotateZ(0);
+    opacity: 1;
   }
   to {
-    transform: rotateZ(180);
+    opacity: 0;
+    display: none;
   }
 }

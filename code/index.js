@@ -38,6 +38,7 @@ function move(num) {
 
   // set header equal to song name
   songHeader.innerHTML = songSlide[num].id;
+  songHeader.className = "";
   songHeader.className = "visible";
 }
 function playSong() {
