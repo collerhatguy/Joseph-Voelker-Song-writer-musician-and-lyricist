@@ -29,6 +29,7 @@ figure {
 img {
   height: 100%;
   width: auto;
+  margin: 0 auto;
   max-width: 98vw;
 }
 footer,
