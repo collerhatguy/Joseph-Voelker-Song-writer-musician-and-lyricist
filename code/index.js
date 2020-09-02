@@ -41,14 +41,6 @@ function move(num) {
   songHeader.className = "";
   songHeader.className = "visible";
 }
-function playSong() {
-  var song = document.querySelector(".visible").children;
-  song[0].play();
-}
-function pauseSong() {
-  var song = document.querySelector(".visible").children;
-  song[0].pause();
-}
 function pauseAll() {
   songSlide.forEach((element) => {
     element.children[0].pause();

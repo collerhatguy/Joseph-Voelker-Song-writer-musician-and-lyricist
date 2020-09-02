@@ -4,7 +4,7 @@
   text-align: center;
 }
 :root {
-  --font-max: 4rem;
+  --font-max: 3.8vw;
 }
 h2,
 footer,
@@ -21,13 +21,15 @@ button {
   justify-content: center;
 }
 button {
+  transition-property: all;
   transition-duration: 300ms;
 }
 button:hover {
-  box-shadow: 0.1em 0.1em 0.1em 1px white;
+  box-shadow: 0.1em 0.1em 0.1em 1px grey;
+  font-size: calc(var(--font-max) + 10px);
 }
 body {
-  height: 100vh;
+  height: 98vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -44,12 +46,20 @@ footer {
   display: none;
 }
 .visible {
-  animation: songTransitionIn 1s ease-in-out forwards;
+  animation: songTransitionIn 700ms ease-in-out forwards;
 }
 @keyframes songTransitionIn {
   0% {
     opacity: 0;
     transform: translateX(-50vw);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateX(15vw);
+  }
+  75% {
+    opacity: 0.75;
+    transform: translateX(-7vw);
   }
   100% {
     opacity: 1;

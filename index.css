@@ -4,18 +4,22 @@
   text-align: center;
 }
 :root {
-  --font-max: 3rem;
+  --font-max: 3.8vw;
 }
 header,
 footer {
   border: 5px solid white;
   border-radius: 2em;
-  overflow: hidden;
 }
 header {
   font-size: var(--font-max);
   padding: 0 1em;
-  height: 100vh;
+  height: 97vh;
+  margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: space-around;
+  justify-content: center;
 }
 figure {
   height: 100vh;
