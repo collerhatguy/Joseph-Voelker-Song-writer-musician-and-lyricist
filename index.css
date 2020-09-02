@@ -14,7 +14,9 @@ footer {
 header {
   font-size: var(--font-max);
   padding: 0 1em;
-  height: 97vh;
+  min-height: 97vh;
+  height: auto;
+  width: 97vw;
   margin-top: 0px;
   display: flex;
   flex-direction: column;

@@ -4,23 +4,26 @@
   text-align: center;
 }
 :root {
-  --font-max: 3.8vw;
+  --font-max: 3.9vh;
 }
 h2,
 footer,
 button {
   padding: 0 1em;
-  border: 5px solid white;
+  border: 0.1em solid white;
   border-radius: 2em;
   overflow: hidden;
 }
+h2 {
+  font-size: calc(var(--font-max) * 2);
+}
 h2,
 button {
-  font-size: var(--font-max);
   margin: 0.1em;
   justify-content: center;
 }
 button {
+  font-size: var(--font-max);
   transition-property: all;
   transition-duration: 300ms;
 }
