@@ -1,10 +1,17 @@
+@media only screen and (max-width: 720px) {
+  :root {
+    --font-max: 3vh;
+  }
+}
+@media only screen and (min-width: 720px) {
+  :root {
+    --font-max: 3.9vh;
+  }
+}
 * {
   color: white;
   background-color: black;
   text-align: center;
-}
-:root {
-  --font-max: 3.9vh;
 }
 h2,
 footer,
