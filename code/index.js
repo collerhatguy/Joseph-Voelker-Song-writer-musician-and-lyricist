@@ -10,16 +10,12 @@ rightButton.addEventListener("click", revolveR);
 selectButton.addEventListener("click", selectS);
 
 function revolveR() {
-  if (songNum < songSlide.length - 1) {
-    songNum++;
-  }
+  songNum < songSlide.length - 1 ? songNum++ : songNum = songNum;
   pauseAll();
   move(songNum);
 }
 function revolveL() {
-  if (songNum > 0) {
-    songNum--;
-  }
+  songNum > 0 ? songNum-- : songNum = songNum;
   pauseAll();
   move(songNum);
 }
