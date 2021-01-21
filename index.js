@@ -7,7 +7,7 @@ const selectButton = document.getElementById("songChoice");
 
 leftButton.addEventListener("click", revolveLeft);
 rightButton.addEventListener("click", revolveRight);
-selectButton.addEventListener("click", selectDirectly);
+selectButton.addEventListener("mouseleave", selectDirectly);
 // set the first song to being desplayed
 move(0);
 // set the left button to invisible;

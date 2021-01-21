@@ -13,6 +13,9 @@
   background-color: black;
   text-align: center;
 }
+#slide-container {
+  height: 25vh;
+}
 h2,
 footer,
 button {
