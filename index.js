@@ -27,9 +27,9 @@ function revolveLeft() {
   move(songNumber);
 }
 function selectDirectly() {
-  if (songNumber < songSlide.length - 2) rightButton.style.display = "none";
-  if (songNumber <= 1 ) leftButton.style.display = "none";
   songNumber = selectButton.value;
+  songNumber < songSlide.length - 2 ? rightButton.style.display = "inline" : rightButton.style.display = "none";
+  songNumber <= 1 ? leftButton.style.display = "none" : leftButton.style.display = "inline";
   pauseAll();
   move(songNumber);
 }

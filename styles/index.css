@@ -13,6 +13,12 @@
   background-color: black;
   text-align: center;
 }
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
 header,
 footer {
   border: 5px solid white;
@@ -22,12 +28,13 @@ header {
   font-size: var(--font-max);
   min-height: 97vh;
   height: auto;
-  width: 97vw;
+  width: 90vw;
   margin-top: 0px auto;
   display: flex;
   flex-direction: column;
   align-items: space-around;
   justify-content: center;
+  padding: 0 .5em;
 }
 figure {
   height: 100vh;
@@ -42,4 +49,5 @@ img {
 footer,
 figcaption {
   font-size: calc(var(--font-max) / 1.618);
+  padding: 0px .5em;
 }
