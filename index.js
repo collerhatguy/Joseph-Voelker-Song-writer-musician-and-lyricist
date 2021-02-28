@@ -7,7 +7,9 @@ const selectButton = document.getElementById("songChoice");
 
 leftButton.addEventListener("click", revolveLeft);
 rightButton.addEventListener("click", revolveRight);
-selectButton.addEventListener("mouseleave", selectDirectly);
+selectButton.addEventListener("click", () => {
+  this.value = "";
+});
 // set the first song to being desplayed
 move(0);
 // set the left button to invisible;
@@ -47,6 +49,7 @@ function move(num) {
   setTimeout(() => {
     songHeader.className = "visible";
   }, 1);
+  num = selectButton.value;
 }
 function pauseAll() {
   songSlide.forEach((element) => {
