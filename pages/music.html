@@ -84,8 +84,8 @@
           </div>
         </div>
         <div id="button-container">
-          <button id="lButton"><</button>
-          <button id="rButton">></button>
+          <button id="leftButton"><</button>
+          <button id="rightButton">></button>
         </div>
       </div>
     </main>
@@ -93,11 +93,11 @@
       <form>
         <label for="songChoice">Choose a song:</label>
         <input 
-        onchange="move(this.value)"
-        name="songChoice" 
-        id="songChoice" 
-        list="songOptions" 
-        required>
+          onchange="move(this.value)"
+          name="songChoice" 
+          id="songChoice" 
+          list="songOptions" 
+          required>
           <datalist id="songOptions">
             <option value="0">Triumph</option>
             <option value="1">Arachnaphobia</option>
@@ -119,7 +119,7 @@
             <option value="17">Zoe Love Song</option>
             <option value="18">Mistakes</option>
           </datalist>
-        </select>
+        </input>
       </form>
     </div>
   </body>

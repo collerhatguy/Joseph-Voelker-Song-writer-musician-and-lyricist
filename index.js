@@ -1,8 +1,8 @@
 const songSlide = document.querySelectorAll(".song-slide");
 var songNumber = 0;
 const songHeader = document.getElementById("songDisplay");
-const leftButton = document.getElementById("lButton");
-const rightButton = document.getElementById("rButton");
+const leftButton = document.getElementById("leftButton");
+const rightButton = document.getElementById("rightButton");
 const selectButton = document.getElementById("songChoice");
 
 leftButton.addEventListener("click", revolveLeft);
@@ -49,7 +49,6 @@ function move(num) {
   setTimeout(() => {
     songHeader.className = "visible";
   }, 1);
-  num = selectButton.value;
 }
 function pauseAll() {
   songSlide.forEach((element) => {
