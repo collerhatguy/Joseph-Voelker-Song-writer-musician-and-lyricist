@@ -15,14 +15,14 @@ move(0);
 // set the left button to invisible;
 leftButton.style.display = "none";
 function revolveRight() {
-  if (songNumber >= songSlide.length - 2) rightButton.style.display = "none";
+  isRightMostCheck();
   if (songNumber < songSlide.length - 1) songNumber++;
   leftButton.style.display = "inline";
   pauseAll();
   move(songNumber);
 }
 function revolveLeft() {
-  if (songNumber < 2) leftButton.style.display = "none";
+  isLeftMostCheck()
   if (songNumber > 0) songNumber--;
   rightButton.style.display = "inline";
   pauseAll();
@@ -30,8 +30,8 @@ function revolveLeft() {
 }
 function selectDirectly() {
   songNumber = selectButton.value;
-  songNumber < songSlide.length - 2 ? rightButton.style.display = "inline" : rightButton.style.display = "none";
-  songNumber <= 1 ? leftButton.style.display = "none" : leftButton.style.display = "inline";
+  isRightMostCheck();
+  isLeftMostCheck();
   pauseAll();
   move(songNumber);
 }
@@ -54,4 +54,10 @@ function pauseAll() {
   songSlide.forEach((element) => {
     element.children[0].pause();
   });
+}
+function isLeftMostCheck() {
+  if (songNumber < 2) leftButton.style.display = "none";
+}
+function isRightMostCheck() {
+  if (songNumber >= songSlide.length - 2) rightButton.style.display = "none";
 }
