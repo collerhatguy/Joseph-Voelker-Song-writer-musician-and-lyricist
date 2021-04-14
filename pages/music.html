@@ -92,13 +92,11 @@
     <div name="choicePanel">
       <form>
         <label for="songChoice">Choose a song:</label>
-        <input 
+        <select 
           onchange="move(this.value)"
           name="songChoice" 
           id="songChoice" 
-          list="songOptions" 
           required>
-          <datalist id="songOptions">
             <option value="0">Triumph</option>
             <option value="1">Arachnaphobia</option>
             <option value="2">Battleship</option>
@@ -118,8 +116,7 @@
             <option value="16">Undertale</option>
             <option value="17">Zoe Love Song</option>
             <option value="18">Mistakes</option>
-          </datalist>
-        </input>
+        </select>
       </form>
     </div>
   </body>

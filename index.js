@@ -35,6 +35,8 @@ function selectDirectly() {
   move(songNumber);
 }
 function move(num) {
+  pauseAll()
+  songNumber = num;
   // have every song set to hidden
   songSlide.forEach((element) => {
     element.className = "song-slide";
